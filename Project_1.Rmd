@@ -1,5 +1,5 @@
 ---
-title: "Project_1_Econ_104"
+title: "Project_1"
 
 ```{r setup, include=FALSE}
 library(knitr)
@@ -437,4 +437,4 @@ Again, indicator_regression and multiple_regression_clean both have the lowest (
 
 Our project aimed to analyze a dataset and generate a model predicting wage based on a set of continuous and discrete possible explanatory variables. Ultimately, our model did not have significant predictive power as evidenced by, among other things: Low R^2 statistics, ~0 p-values from the RESET score, implying model misspecification, and high AIC and BIC return values. While our initial guess at the source of the misspecification errors was the fact that the distribution of wage in the data set appears to follow a right-skewed lognormal distribution, running the RESET test on the log-adjusted model still returned a p-value ~0 (*although slightly better than the general linear model*) , which indicates that there are other causes of this issue. Some ideas we brainstormed that could cause the above indicators of poor predictive power are: General randomness and/or high variance in the data set (this could be related to our findings of homoskedasticity with a GQ test p value of .3276, which could indicate some random variance not correlated with any predictive variable), lognormal explanatory variable distributions that could provide better fit with a linear (or log-adjusted) response variable, poor predictive power of any of the variables on wage as an exogenous observation, and others.
 
-Ultimately, going through this process was a very interesting task - we learned many new statistical methods for model evaluation and understanding the rigorous, step-by-step process of filtering through model possibilities was rewarding. It would be good to further explore the CPS1988 dataset and attempt all possible model combinations and functional form specifications to understand where the source of variance and the source of misspecification in the linear model lies.
+Ultimately, going through this process was a very interesting task - we learned many new statistical methods for model evaluation and understanding the rigorous, step-by-step process of filtering through model possibilities was rewarding. It would be good to further explore the CPS1988 dataset and attempt all possible model combinations and functional form specifications to understand where the source of variance and the source of misspecification in the linear model lies.[Group_project_1.pdf](https://github.com/ByeonghyeokYoo/Portfolios/files/9977490/Group_project_1.pdf)
